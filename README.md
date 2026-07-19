@@ -450,5 +450,3 @@ To refine it further, you could add a short section with **sample commands** for
 docker build -t gnembac/fastapi-k8s:1.0.1 .
 docker push gnembac/fastapi-k8s:1.0.1
 ```
-
-What kind of additional detail would you like to capture next in this README – more about **CI/CD (DVC/MLflow/Airflow later)**, or a short section on **how this pattern generalizes to your Australian Rainfall Prediction project**?
