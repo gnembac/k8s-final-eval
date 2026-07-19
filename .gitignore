@@ -1,0 +1,9 @@
+# Python venv
+.venv/
+
+# Python caches
+__pycache__/
+*.pyc
+
+# Minikube binary
+minikube-linux-amd64
