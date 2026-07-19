@@ -29,7 +29,7 @@ spec:
             - containerPort: 3306
 
         - name: fastapi-container
-          image: gnembac/fastapi-k8s:1.0.1
+          image: gnembac/fastapi-k8s:1.0.2
           env:
             - name: MYSQL_URL
               value: mysql-service

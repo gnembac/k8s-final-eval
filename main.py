@@ -38,11 +38,10 @@ async def get_status():
     """
     return 1
 
-
 @server.get("/users")
 async def get_users():
     with mysql_engine.connect() as connection:
-        results = connection.execute(text("SELECT * FROM Users;"))
+        results = connection.execute(text("SELECT * FROM Users"))
 
     results = [
         User(
@@ -59,8 +58,8 @@ async def get_user(user_id: int):
     with mysql_engine.connect() as connection:
         results = connection.execute(
             text("SELECT * FROM Users WHERE Users.id = :uid"),
-                {"uid": user_id}
-            )
+            {"uid": user_id}
+        )
 
     results = [
         User(
